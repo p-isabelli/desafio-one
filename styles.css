@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+header{
+    background-color: rgb(218, 197, 236);
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container{
+    background-color: rgb(218, 197, 236);
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.area-criptografar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.campo-mensagem{
+    height: 600px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#campo-texto-input{
+    background-color: rgb(218, 197, 236);
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 2em;
+}
+
+#btn-criptografar, #btn-descriptografar{
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 15px 15px 0;
+    font-size: 1em;
+    margin: 15px 10px;
+    font-weight: 500;
+}
+
+#btn-criptografar{
+    background-color: rgb(123, 80, 160);
+    color: #FFF;
+}
+
+#btn-criptografar:hover{
+    background-color: rgb(94, 56, 127);
+    transition: all 0.5s;
+}
+
+#btn-descriptografar{
+    background-color: rgb(204, 186, 226);
+    border: 2px solid rgb(56, 30, 78);
+}
+
+#btn-descriptografar:hover{
+    background-color: rgb(222, 216, 230);
+    transition: all 0.5s;
+}
+
+.campo-texto{
+    background-color: rgb(245, 245, 245);
+    max-width: 400px;
+    width: 100%;
+    height: 585px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;  
+    text-align: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.campo-texto-botoes p {
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+.campo-texto-icones{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin: 0 5px;
+    align-items: center;
+}
+
+.campo-texto p {
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+.btn-limpar{
+    width: 150px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    padding: 12px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-limpar:hover{
+    padding: 13px;
+    transition: all 0.2s;
+}
