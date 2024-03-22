@@ -26,7 +26,6 @@ header{
 
 .area-criptografar{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
@@ -159,6 +158,11 @@ header{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    
+    .area-criptografar{
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
 }
