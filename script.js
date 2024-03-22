@@ -7,18 +7,23 @@ const chavesCriptografia = {
 };
 
 const campoTextoInput = document.getElementById('campo-texto-input'); 
-
-const mensagemCriptografar = document.getElementById('campo-texto');
-
-document.getElementById('btn-limpar').addEventListener('click', function() {
-    campoTextoInput.value = 'Digite seu texto aqui';
-    mensagemCriptografar.textContent = 'Digite um texto que você deseja criptografar ou descriptografar.';
-});
+const btnLimpar = document.getElementById('btn-limpar');
+const txt1 = document.getElementById('campo-texto-1');
+const txt2 = document.getElementById('campo-texto-2');
+const mensagemCriptografada = document.getElementById('mensagemCriptografada');
 
 document.getElementById('campo-texto-input').addEventListener('focus', function() {
     if (this.value === 'Digite seu texto aqui') {
         this.value = '';
     }
+});
+
+btnLimpar.addEventListener("click", function(){
+    campoTextoInput.value = 'Digite seu texto aqui';
+    mensagemCriptografada.innerHTML = '';
+    txt1.style.display = 'block';
+    txt2.style.display = 'block';
+
 });
 
 function criptografarTexto(texto) {
@@ -34,8 +39,9 @@ document.getElementById('btn-criptografar').addEventListener('click', function()
     const texto = document.getElementById('campo-texto-input').value;
     if(texto !== ''){
         const textoCriptografado = criptografarTexto(texto);
-        document.querySelector('.campo-texto p:first-child').textContent = textoCriptografado;
-        document.querySelector('.campo-texto p:nth-child(2)').textContent = '';
+        mensagemCriptografada.textContent = textoCriptografado;
+        txt1.style.display = 'none';
+        txt2.style.display = 'none';
     }
 });
 
