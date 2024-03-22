@@ -8,20 +8,27 @@
     font-family: "Comfortaa", sans-serif;
 }
 
-header{
-    background-color: rgb(218, 197, 236);
+body{
     max-width: 1080px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
 }
+
+header{
+    background-color: rgb(218, 197, 236);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 .container{
     background-color: rgb(218, 197, 236);
+    height: 100vh;
     max-width: 1080px;
     width: 100%;
-    margin: 0 auto;
-    height: 100vh;
 }
 
 .area-criptografar{
@@ -126,6 +133,7 @@ header{
     background-color: black;
     color: #fff;
     cursor: pointer;
+    border: 1px solid #000000;
 }
 
 .campo-texto-1{
@@ -135,7 +143,6 @@ header{
 .btn-limpar:hover{
     background-color: #fff;
     color: #000000;
-    border: 1px solid #000000;
     transition: all 0.2s;
 }
 
@@ -168,5 +175,33 @@ header{
     #campo-texto-input{
         font-size: 1.2em;
     }
+
+}
+
+/*modo noturno*/
+
+body.modo-noturno{
+    background-color: rgb(23, 5, 38);
+}
+
+body.modo-noturno .container, body.modo-noturno #campo-texto-input, body.modo-noturno header{
+    background-color: rgb(42, 20, 61);
+    color: #fff;
+
+}
+
+body.modo-noturno .campo-texto{
+    background-color: rgb(71, 34, 103);
+}
+
+.btn-dark-mode{
+    padding: 12px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
 
 }

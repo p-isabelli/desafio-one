@@ -11,6 +11,11 @@ const btnLimpar = document.getElementById('btn-limpar');
 const txt1 = document.getElementById('campo-texto-1');
 const txt2 = document.getElementById('campo-texto-2');
 const mensagemCriptografada = document.getElementById('mensagemCriptografada');
+const btnDarkMode = document.getElementById('btn-dark-mode');
+
+btnDarkMode.addEventListener("click", function(){
+    document.body.classList.toggle('modo-noturno');
+})
 
 document.getElementById('campo-texto-input').addEventListener('focus', function() {
     if (this.value === 'Digite seu texto aqui') {
